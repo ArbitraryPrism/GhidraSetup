@@ -2,13 +2,13 @@
 Categories=Application;Development;
 Comment[en_US]=Ghidra Software Reverse Engineering Suite
 Comment=Ghidra Software Reverse Engineering Suite
-Exec=/opt/ghidra/ghidraRun
+Exec=ExecPath
 GenericName[en_US]=Ghidra Software Reverse Engineering Suite
 GenericName=Ghidra Software Reverse Engineering Suite
-Icon=/opt/ghidra/support/ghidra.ico
+Icon=IconPath
 MimeType=
 Name[en_US]=Ghidra 10.2
-Name=Ghidra 9.0
+Name=Ghidra 10.2
 Path=/opt/ghidra/
 StartupNotify=false
 Terminal=false
