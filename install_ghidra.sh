@@ -5,7 +5,7 @@ printf "\n\n[+] Installing Java JDK...\n\n"
 sudo apt update
 sudo apt install default-jdk
 
-# Get Ghidra file...
+# Get Ghidra file... Change version if required...
 printf "\n\n[+] Getting Ghidra...\n\n"
 wget -O ~/ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.2.2_build/ghidra_10.2.2_PUBLIC_20221115.zip
 FolderName=$(unzip -qql ghidra.zip | head -n1 | awk '{print $4}')
