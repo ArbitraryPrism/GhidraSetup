@@ -3,7 +3,7 @@
 # Install JDK...
 printf "\n\n[+] Installing Java JDK...\n\n"
 sudo apt update
-sudo apt install default-jdk
+sudo apt install openjdk-17-jdk
 
 # Get Ghidra file... Change version if required...
 printf "\n\n[+] Getting Ghidra...\n\n"
