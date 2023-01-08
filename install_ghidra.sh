@@ -13,7 +13,7 @@ unzip ~/ghidra.zip
 
 # Update the image...
 printf "[+] Getting the icon image...\n\n"
-wget -O ~/$FolderName/support/ghidra.png https://github.com/ArbitraryPrism/GhidraSetup/raw/main/ghidra.png
+wget -O ~/${FolderName}support/ghidra.png https://github.com/ArbitraryPrism/GhidraSetup/raw/main/ghidra.png
 
 # Set up the desktop file...
 printf "\n\n[+] Creating desktop file...\n\n"
@@ -25,8 +25,10 @@ chmod +x ~/.local/share/applications/ghidra.desktop
 printf "\n\n[+] Updating desktop file...\n\n"
 ExecutePath=~/${FolderName}ghidraRun
 IconPath=~/${FolderName}support/ghidra.png
+Path=~/${FolderName}
 sed -i "s@ExecPath@$ExecutePath@g" ~/.local/share/applications/ghidra.desktop
 sed -i "s@IconPath@$IconPath@g" ~/.local/share/applications/ghidra.desktop
+sed -i "s@Path@$Path@g" ~/.local/share/applications/ghidra.desktop
 
 # Remove the zip file...
 printf "\n\n[+] Removing zip file...\n\n"
