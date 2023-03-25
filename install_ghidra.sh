@@ -7,9 +7,9 @@ sudo apt install openjdk-17-jdk
 
 # Get Ghidra file... Change version if required...
 printf "\n\n[+] Getting Ghidra...\n\n"
-wget -O ~/ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.2.2_build/ghidra_10.2.2_PUBLIC_20221115.zip
-FolderName="~/"$(unzip -qql ghidra.zip | head -n1 | awk '{print $4}')
-unzip ~/ghidra.zip
+wget -O ~/Downloads/ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.2.3_build/ghidra_10.2.3_PUBLIC_20230208.zip
+FolderName=$(unzip -qql ghidra.zip | head -n1 | awk '{print $4}')
+unzip ~/Downloads/ghidra.zip -d ~/
 
 # Update the image...
 printf "[+] Getting the icon image...\n\n"
