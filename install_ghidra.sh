@@ -25,11 +25,11 @@ chmod +x ~/.local/share/applications/ghidra.desktop
 printf "\n\n[+] Updating desktop file...\n\n"
 ExecutePath=~/${FolderName}ghidraRun
 IconPath=~/${FolderName}support/ghidra.png
-Path=~/${FolderName}
+GhidraPath=~/${FolderName}
 sed -i "s@ExecPath@$ExecutePath@g" ~/.local/share/applications/ghidra.desktop
 sed -i "s@IconPath@$IconPath@g" ~/.local/share/applications/ghidra.desktop
-sed -i "s@Path@$Path@g" ~/.local/share/applications/ghidra.desktop
+sed -i "s@GhidraPath@$GhidraPath@g" ~/.local/share/applications/ghidra.desktop
 
 # Remove the zip file...
 printf "\n\n[+] Removing zip file...\n\n"
-rm ~/ghidra.zip
+rm ~/Downloads/ghidra.zip
