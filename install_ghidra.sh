@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install JDK...
-printf "\n\n[+] Installing Java JDK...\n\n"
+printf "\n\n[+] Installing OpenJDK...\n\n"
 sudo apt update
 sudo apt install openjdk-17-jdk -y
 
