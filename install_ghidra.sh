@@ -3,9 +3,9 @@
 # Install JDK...
 printf "\n\n[+] Installing Java JDK...\n\n"
 sudo apt update
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jdk -y
 
-# Get Ghidra file... Change version if required...
+# Get Ghidra file... 
 printf "\n\n[+] Getting Ghidra...\n\n"
 Latest_Ghidra_Version=$(wget https://github.com/NationalSecurityAgency/ghidra/releases/latest 2>&1 | grep Location: | grep -Eo 'https://[^ >]+' | head -1 | awk -F/  '{print $NF}')
 Latest_Ghidra=$(wget -qO- https://github.com/NationalSecurityAgency/ghidra/releases/expanded_assets/$Latest_Ghidra_Version 2>&1 | grep -Eo 'ghidra_.*zip')
