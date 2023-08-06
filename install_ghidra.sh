@@ -9,7 +9,7 @@ sudo apt install openjdk-19-jdk -y
 printf "\n\n[+] Getting Ghidra...\n\n"
 Latest_Ghidra_Version=$(wget https://github.com/NationalSecurityAgency/ghidra/releases/latest 2>&1 | grep Location: | grep -Eo 'https://[^ >]+' | head -1 | awk -F/  '{print $NF}')
 Latest_Ghidra=$(wget -qO- https://github.com/NationalSecurityAgency/ghidra/releases/expanded_assets/$Latest_Ghidra_Version 2>&1 | grep -Eo 'ghidra_.*zip')
-wget -O ~/Downloads/ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.3_build/$Latest_Ghidra
+wget -O ~/Downloads/ghidra.zip https://github.com/NationalSecurityAgency/ghidra/releases/download/$Latest_Ghidra_Version/$Latest_Ghidra
 FolderName=$(unzip -qql ~/Downloads/ghidra.zip | head -n1 | awk '{print $4}')
 unzip ~/Downloads/ghidra.zip -d ~/
 
