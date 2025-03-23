@@ -3,7 +3,7 @@
 # Install JDK...
 printf "\n\n[+] Installing OpenJDK...\n\n"
 sudo apt update
-sudo apt install openjdk-19-jdk -y
+sudo apt install openjdk-21-jdk -y
 
 # Get Ghidra file... 
 printf "\n\n[+] Getting Ghidra...\n\n"
