@@ -14,7 +14,7 @@ mkdir ~/Applications
 # FolderName=$(unzip -qql ~/Downloads/ghidra.zip | head -n1 | awk '{print $4}')
 FolderName=Ghidra
 unzip ~/Downloads/ghidra.zip -d ~/Applications
-mv ~/Applications/$(unzip -qql ~/Downloads/ghidra.zip | head -n1 | awk '{print $4}') Ghidra
+mv ~/Applications/$(unzip -qql ~/Downloads/ghidra.zip | head -n1 | awk '{print $4}') ~/Applications/Ghidra
 
 # Update the image...
 printf "[+] Getting the icon image...\n\n"
